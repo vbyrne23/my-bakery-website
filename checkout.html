@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Vikki's Treats</title>
+    <a href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Vikki's Treats</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <section id="checkout-section">
+        <h2>Checkout</h2>
+        <form id="checkout-form" action="thank-you.html" method="POST">
+            <h3>Customer Information</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <h3>Order Details</h3>
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="" disabled selected>Select an item</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="chocolate_cake">Chocolate Cake</option>
+                <option value="blueberry_muffin">Blueberry Muffin</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <h3>Payment Information</h3>
+            <label for="card-number">Credit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required pattern="\d{16}" title="16-digit card number">
+
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration" required placeholder="MM/YY">
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="3-digit CVV">
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vikki's Treats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

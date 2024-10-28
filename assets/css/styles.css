@@ -41,7 +41,8 @@ nav a:hover {
 #menu-section,
 #about-section,
 #contact-section,
-#checkout-section {
+#checkout-section 
+#thankou-section {
     background-color: #ffefc3;
     color: #333;
     padding: 30px;

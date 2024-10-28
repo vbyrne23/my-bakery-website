@@ -16,17 +16,24 @@ header {
     background-color: #ff9800;
     color: white;
     padding: 20px;
-    text-align: center;
-    width: 100%;
-    position: relative; /* Make sure header stays at the top */
+    text-align: center; /* Center header text */
 }
 
-/* Navigation Styles */
+/* Navigation Styling */
+nav {
+    margin-top: 10px; /* Space between the header and nav links */
+}
+
 nav a {
-    margin: 0 15px;
+    margin: 0 15px; /* Space between navigation links */
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block; /* Align links horizontally */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
 }
 
 /* Centering Content and Adding Colorful Backgrounds */

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Our Bakery</title>
-   <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
         <h1>Vikki's Treats</h1>
         <nav>
-        <a href="#welcome-section">Home</a>
-        <a href="#menu-section">Menu</a>
-        <a href="#about-section">About Us</a>
-        <a href="#contact-section">Contact</a>
-        <a href="#checkout-section">Checkout</a>
+            <a href="#welcome-section">Home</a>
+            <a href="#menu-section">Menu</a>
+            <a href="#about-section">About Us</a>
+            <a href="#contact-section">Contact</a>
+            <a href="#checkout-section">Checkout</a>
         </nav>
     </header>
 
-     <!-- Video Section -->
+    <!-- Welcome Section -->
     <section id="welcome-section">
         <h2>Welcome to Our Bakery!</h2>
         <p>Enjoy delicious homemade treats with the finest ingredients.</p>
@@ -28,9 +28,56 @@
             <source src="assets/video/bakery_video.mp4" type="video/mp4">
             Yummy Cupcakes
         </video>
+    </section>
+
+    <!-- Menu Section (Add your content here) -->
+    <section id="menu-section">
+        <h2>Our Menu</h2>
+        <p>Explore our range of delightful treats!</p>
+        <!-- Add menu items here -->
+    </section>
+
+    <!-- About Section (Add your content here) -->
+    <section id="about-section">
+        <h2>About Us</h2>
+        <p>Learn more about our passion for baking.</p>
+        <!-- Add more about your bakery here -->
+    </section>
+
+    <!-- Contact Section (Add your content here) -->
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for orders or inquiries.</p>
+        <!-- Add contact form or details here -->
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout-section">
+        <h2>Checkout</h2>
+        <form>
+            <!-- Your checkout form elements go here, e.g. customer details, payment info -->
+            <button type="button" id="complete-purchase-button">Complete Purchase</button>
+        </form>
+    </section>
+
+    <!-- Thank You Section -->
+    <section id="thankyou-section" style="display: none;"> <!-- Initially hidden -->
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your order has been completed successfully.</p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Vikki's Treats. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('complete-purchase-button').addEventListener('click', function() {
+            // Hide the checkout section
+            document.getElementById('checkout-section').style.display = 'none';
+            // Show the thank you section
+            document.getElementById('thankyou-section').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
+

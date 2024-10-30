@@ -58,8 +58,23 @@
         </form>
     </section>
 
+    <!-- Thank You Section -->
+    <section id="thankyou-section" style="display: none;"> <!-- Initially hidden -->
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your order has been completed successfully.</p>
+    </section>
+
     <footer>
         <p>&copy; 2024 Vikki's Treats. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('complete-purchase-button').addEventListener('click', function() {
+            // Hide the checkout section
+            document.getElementById('checkout-section').style.display = 'none';
+            // Show the thank you section
+            document.getElementById('thankyou-section').style.display = 'block';
+        });
+    </script>
 </body>
 </html>

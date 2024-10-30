@@ -22,6 +22,8 @@ header {
 
 /* Navigation Styling */
 nav {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the navigation items */
     margin: 10px 0; /* Space between header and nav links */
 }
 

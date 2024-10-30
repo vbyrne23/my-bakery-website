@@ -63,6 +63,22 @@ nav a:hover {
 #checkout-section { background-color: #ffccbc; } /* Light coral */
 #thankyou-section { background-color: #d1c4e9; } /* Light lavender */
 
+/* Photo Gallery Styling */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: center; /* Center the gallery */
+    margin: 20px 0; /* Space around the gallery */
+}
+
+.photo-gallery img {
+    margin: 10px; /* Space around each image */
+    width: 200px; /* Set a fixed width for images */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
 /* Box Styling for Images and Videos */
 .box {
     background-color: #fff; /* White background for boxes */

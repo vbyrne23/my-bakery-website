@@ -3,37 +3,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Change font for a cleaner look */
 }
 
 body {
-    background-color: #f9f7f6;
+    background-color: #f5f5f5; /* Slightly lighter background */
     color: #333;
 }
 
 /* Header Styling */
 header {
-    background-color: #ff9800;
-    color: white;
-    padding: 20px;
-    text-align: center; /* Center header text */
+    background-color: #fff; /* White background for the header */
+    color: #333;
+    padding: 20px 0; /* Vertical padding for more breathing space */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Navigation Styling */
 nav {
-    margin-top: 10px; /* Space between the header and nav links */
+    margin: 10px 0; /* Space between the header and nav links */
 }
 
 nav a {
-    margin: 0 15px; /* Space between navigation links */
-    color: white;
+    margin: 0 20px; /* Adjusted space between navigation links */
+    color: #ff9800; /* Color matching the Panera theme */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600; /* Slightly bolder font weight */
     display: inline-block; /* Align links horizontally */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Optional: underline on hover */
+    text-decoration: underline; /* Underline on hover for emphasis */
 }
 
 /* Centering Content and Adding Colorful Backgrounds */
@@ -41,36 +42,38 @@ nav a:hover {
 #menu-section,
 #about-section,
 #contact-section,
-#checkout-section, 
-#thankou-section {
-    background-color: #ffefc3;
+#checkout-section,
+#thankyou-section {
+    background-color: #fff; /* White background for sections */
     color: #333;
-    padding: 30px;
+    padding: 40px; /* Increased padding for more space */
     text-align: center;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Wider sections */
+    margin: 30px auto; /* Adjusted margins for spacing */
+    border-radius: 8px; /* Slightly less rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 table {
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0; /* Increased space around tables */
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 15px; /* Increased padding for cells */
 }
 
 th {
-    background-color: #ffc107;
+    background-color: #ffefc3; /* Light yellow for header */
     color: #333;
+    font-weight: 700; /* Bold font for header */
 }
 
 td {
-    background-color: #fff9e6;
+    background-color: #fff; /* White for table cells */
 }
 
 /* Footer Styling */
@@ -78,29 +81,31 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px 0; /* Increased padding for footer */
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Changed from fixed to relative for better layout */
 }
 
 /* Video Styling */
 video {
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    margin-top: 30px; /* More space above videos */
 }
 
+/* Button Styling */
 button, input[type="submit"] {
-    background-color: #ff9800;
+    background-color: #ff9800; /* Panera-like orange color */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Larger button size */
     font-size: 16px;
+    font-weight: bold; /* Bolder text for buttons */
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #e08800;
+    background-color: #e08800; /* Darker orange on hover */
 }

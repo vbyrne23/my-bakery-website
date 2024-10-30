@@ -52,7 +52,9 @@ nav a:hover {
     margin: 30px auto; /* Adjusted margins for spacing */
     border-radius: 8px; /* Slightly less rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    display: none; /* Initially hide the Thank You section */
 }
+
 
 table {
     width: 100%;

@@ -3,41 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Change font for a cleaner look */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean font for readability */
 }
 
 body {
-    background-color: #f5f5f5; /* Slightly lighter background */
-    color: #333;
+    background-color: #f5f5f5; /* Light background for a fresh look */
+    color: #333; /* Dark text for contrast */
 }
 
 /* Header Styling */
 header {
-    background-color: #fff; /* White background for the header */
-    color: #333;
-    padding: 20px 0; /* Vertical padding for more breathing space */
+    background-color: #ff6f61; /* Vibrant coral for the header */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Vertical padding for breathing space */
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
 /* Navigation Styling */
 nav {
-    margin: 10px 0; /* Space between the header and nav links */
+    margin: 10px 0; /* Space between header and nav links */
 }
 
 nav a {
-    margin: 0 20px; /* Adjusted space between navigation links */
-    color: #ff9800; /* Color matching the Panera theme */
+    margin: 0 20px; /* Space between navigation links */
+    color: #ffffff; /* White for navigation links */
     text-decoration: none;
-    font-weight: 600; /* Slightly bolder font weight */
-    display: inline-block; /* Align links horizontally */
+    font-weight: 600; /* Bold font weight */
 }
 
 nav a:hover {
     text-decoration: underline; /* Underline on hover for emphasis */
 }
 
-/* Centering Content and Adding Colorful Backgrounds */
+/* Section Styling with Colorful Backgrounds */
 #welcome-section,
 #menu-section,
 #about-section,
@@ -45,21 +44,43 @@ nav a:hover {
 #checkout-section,
 #thankyou-section {
     background-color: #fff; /* White background for sections */
-    color: #333;
+    color: #333; /* Dark text */
     padding: 40px; /* Increased padding for more space */
     text-align: center;
     width: 90%; /* Wider sections */
-    margin: 30px auto; /* Adjusted margins for spacing */
-    border-radius: 8px; /* Slightly less rounded corners */
+    margin: 30px auto; /* Centered sections */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
-    display: none; /* Initially hide the Thank You section */
 }
 
+/* Colorful Section Backgrounds */
+#welcome-section { background-color: #ffe0b2; } /* Light orange */
+#menu-section { background-color: #e1bee7; } /* Light purple */
+#about-section { background-color: #bbdefb; } /* Light blue */
+#contact-section { background-color: #c8e6c9; } /* Light green */
+#checkout-section { background-color: #ffccbc; } /* Light coral */
+#thankyou-section { background-color: #d1c4e9; } /* Light lavender */
 
+/* Box Styling for Images and Videos */
+.box {
+    background-color: #fff; /* White background for boxes */
+    border-radius: 10px; /* Rounded corners for boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside boxes */
+    margin: 20px auto; /* Center boxes */
+    width: 90%; /* Box width */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.box:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Table Styling */
 table {
     width: 100%;
     margin: 30px 0; /* Increased space around tables */
-    border-collapse: collapse;
+    border-collapse: collapse; /* Merge borders */
 }
 
 th,
@@ -70,7 +91,7 @@ td {
 
 th {
     background-color: #ffefc3; /* Light yellow for header */
-    color: #333;
+    color: #333; /* Dark text for header */
     font-weight: 700; /* Bold font for header */
 }
 
@@ -80,34 +101,45 @@ td {
 
 /* Footer Styling */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark footer */
+    color: white; /* White text for contrast */
     text-align: center;
     padding: 20px 0; /* Increased padding for footer */
     width: 100%;
-    position: relative; /* Changed from fixed to relative for better layout */
 }
 
 /* Video Styling */
 video {
-    border-radius: 8px;
+    border-radius: 10px; /* Rounded corners for videos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
     margin-top: 30px; /* More space above videos */
 }
 
 /* Button Styling */
 button, input[type="submit"] {
-    background-color: #ff9800; /* Panera-like orange color */
-    color: white;
+    background-color: #ff9800; /* Bright orange for buttons */
+    color: white; /* White text */
     border: none;
     padding: 12px 24px; /* Larger button size */
     font-size: 16px;
     font-weight: bold; /* Bolder text for buttons */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 button:hover, input[type="submit"]:hover {
     background-color: #e08800; /* Darker orange on hover */
 }
+
+/* Additional Responsive Styles */
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 10px; /* Adjust spacing for smaller screens */
+    }
+    
+    .box {
+        width: 95%; /* Wider on small screens */
+    }
+}
+

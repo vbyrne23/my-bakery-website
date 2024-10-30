@@ -10,12 +10,11 @@
     <header>
         <h1>Vikki's Treats</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="thankyou.html">Thank You</a>
+        <a href="#welcome-section">Home</a>
+        <a href="#menu-section">Menu</a>
+        <a href="#about-section">About Us</a>
+        <a href="#contact-section">Contact</a>
+        <a href="#checkout-section">Checkout</a>
         </nav>
     </header>
 
@@ -29,6 +28,29 @@
             <source src="assets/video/bakery_video.mp4" type="video/mp4">
             Yummy Cupcakes
         </video>
+
+        <!-- Checkout Section -->
+<section id="checkout-section">
+    <h2>Checkout</h2>
+    <!-- Your checkout form goes here -->
+    <button id="complete-purchase-button">Complete Purchase</button>
+</section>
+
+<!-- Thank You Section -->
+<section id="thankyou-section">
+    <h2>Thank You for Your Purchase!</h2>
+    <p>Your order has been completed successfully.</p>
+</section>
+
+<script>
+    document.getElementById('complete-purchase-button').addEventListener('click', function() {
+        // Hide checkout section
+        document.getElementById('checkout-section').style.display = 'none';
+        // Show thank you section
+        document.getElementById('thankyou-section').style.display = 'block';
+    });
+</script>
+
 
     <footer>
         <p>&copy; 2024 Vikki's Treats. All rights reserved.</p>
